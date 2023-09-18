@@ -1,6 +1,12 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
+import 'api/APIs.dart';
+import 'firebase_options.dart';
+
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  _initializeFirebase();
   runApp(const MyApp());
 }
 
@@ -18,6 +24,12 @@ class MyApp extends StatelessWidget {
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
+}
+
+_initializeFirebase() async {
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 }
 
 class MyHomePage extends StatefulWidget {
@@ -62,10 +74,28 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          FloatingActionButton(
+            onPressed: _incrementCounter,
+            tooltip: 'Increment',
+            child: const Icon(Icons.add),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          FloatingActionButton(
+            onPressed: () {
+              APIs.updateInfo('main branch').then((value) {
+                print('update done');
+              });
+            },
+            tooltip: 'Increment',
+            child: const Icon(Icons.analytics),
+          ),
+        ],
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
