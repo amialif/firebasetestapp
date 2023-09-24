@@ -44,37 +44,37 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDTgIA2Q-UJjO3mjFrsgbLDyPYcwRq8Dvc',
-    appId: '1:28060239971:web:9c78b273a6c6b0dffe9056',
-    messagingSenderId: '28060239971',
-    projectId: 'fir-testapp-e9485',
-    authDomain: 'fir-testapp-e9485.firebaseapp.com',
-    storageBucket: 'fir-testapp-e9485.appspot.com',
+    apiKey: 'AIzaSyBIH-nN3G0s3-TZLT5R0Ny_JNNWEdgMwOg',
+    appId: '1:807739844167:web:f574b395b7c47e75a0f362',
+    messagingSenderId: '807739844167',
+    projectId: 'testappbr01',
+    authDomain: 'testappbr01.firebaseapp.com',
+    storageBucket: 'testappbr01.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBE7y0qTJBlO1eOQBWgQUGDbrmHXnDQaOg',
-    appId: '1:28060239971:android:573e650cf6d1b885fe9056',
-    messagingSenderId: '28060239971',
-    projectId: 'fir-testapp-e9485',
-    storageBucket: 'fir-testapp-e9485.appspot.com',
+    apiKey: 'AIzaSyBhrba58ngRg19WD6dtqkWd9Bbk6GWkmho',
+    appId: '1:807739844167:android:2d79cf88b39e4a4ba0f362',
+    messagingSenderId: '807739844167',
+    projectId: 'testappbr01',
+    storageBucket: 'testappbr01.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDCLgGhd7FPQuTfXDWj5YHtKh9NGEfVpgI',
-    appId: '1:28060239971:ios:603af90adc50dfaffe9056',
-    messagingSenderId: '28060239971',
-    projectId: 'fir-testapp-e9485',
-    storageBucket: 'fir-testapp-e9485.appspot.com',
+    apiKey: 'AIzaSyBeGlUIPJQ0IHM7AAQnKSWKAer_PpkO9Zg',
+    appId: '1:807739844167:ios:d6dcf92829a5581fa0f362',
+    messagingSenderId: '807739844167',
+    projectId: 'testappbr01',
+    storageBucket: 'testappbr01.appspot.com',
     iosBundleId: 'com.example.testapp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDCLgGhd7FPQuTfXDWj5YHtKh9NGEfVpgI',
-    appId: '1:28060239971:ios:603af90adc50dfaffe9056',
-    messagingSenderId: '28060239971',
-    projectId: 'fir-testapp-e9485',
-    storageBucket: 'fir-testapp-e9485.appspot.com',
+    apiKey: 'AIzaSyBeGlUIPJQ0IHM7AAQnKSWKAer_PpkO9Zg',
+    appId: '1:807739844167:ios:d6dcf92829a5581fa0f362',
+    messagingSenderId: '807739844167',
+    projectId: 'testappbr01',
+    storageBucket: 'testappbr01.appspot.com',
     iosBundleId: 'com.example.testapp',
   );
 }

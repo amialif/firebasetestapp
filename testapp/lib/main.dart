@@ -28,6 +28,7 @@ class MyApp extends StatelessWidget {
 
 _initializeFirebase() async {
   await Firebase.initializeApp(
+    name: "new app",
     options: DefaultFirebaseOptions.currentPlatform,
   );
 }
